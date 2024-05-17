@@ -51,7 +51,6 @@ public class RentalManageDto {
 
     private Account account;
 
-  
     public String validationChecks(Integer prestatus) {
             Date currentDate = new Date();
         if(prestatus == RentalStatus.RENT_WAIT.getValue() && status ==  RentalStatus.CANCELED.getValue()){
@@ -79,9 +78,6 @@ public class RentalManageDto {
         }
             return null;
     }
-
-
-
 }
 
 
