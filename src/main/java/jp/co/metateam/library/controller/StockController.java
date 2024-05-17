@@ -128,7 +128,7 @@ public class StockController {
             ra.addFlashAttribute("stockDto", stockDto);
             ra.addFlashAttribute("org.springframework.validation.BindingResult.stockDto", result);
 
-            return "redirect:/stock/edit";
+            return "redirect:/stock/" + id + "/edit";
         }
     }
 
